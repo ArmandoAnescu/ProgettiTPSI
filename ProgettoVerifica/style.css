@@ -1,0 +1,79 @@
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+body{
+    font-size: large;
+}
+.main{
+        display: flex; /* Imposta il layout come Flexbox */
+        justify-content: center; /* Centra orizzontalmente il contenuto */
+        align-items: center; /* Centra verticalmente il contenuto */
+        height: 100vh; /* Imposta l'altezza del body a tutta l'altezza della finestra */
+        margin: 0; /* Rimuove i margini di default */
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due colonne di larghezza uguale */
+    grid-template-rows: repeat(3, auto); /* Tre righe */
+    gap: 20px; /* Spazio tra i pulsanti */
+    justify-items: center; /* Centra i pulsanti orizzontalmente */
+    align-items: center; /* Centra i pulsanti verticalmente */
+    width: 100%;
+    max-width: 800px;
+    margin-top: 0px;
+}
+
+.button-container button {
+    padding: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #20538a;
+    color: white;
+    transition: background-color 0.3s;
+    width: 200px;
+    height: 100px;
+}
+
+.button-container button:hover {
+    background-color: #40a857;
+}
+
+textarea{
+    width: 50%;
+    height:20dvw;
+}
+#btn-return{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+
+}
+#btn-return:hover{
+    background-color: #00ffbf94;
+}
+#btn-reset{
+    padding: 10px;
+    background-color: rgba(128, 0, 0, 0.822);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+
+}
+#btn-reset:hover{
+    background-color: #ff0000;
+}
